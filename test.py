@@ -21,5 +21,5 @@ if numpy.any([isinstance(x.op, T.Elemwise) for x in f.maker.fgraph.toposort()]):
 else:
     print('Used the gpu')
 
-#   THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32,lib.cnmem=0.01 time python3 test.py
+#   THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32,lib.cnmem=0.8 time python3 test.py
 
